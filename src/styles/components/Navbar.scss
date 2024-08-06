@@ -1,65 +1,145 @@
 @import "../base/typography";
 @import "../variables/variables";
+@import "../abstracts/mixins";
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 104px;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: $second_color solid 1px;
-
-
-  .logo {
+nav {
+  .navbar-conteiner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 104px;
+    z-index: 1000;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 96px;
+    border-bottom: $second_color solid 1px;
+    @include tablet { height: 86px; }
+    @include mobile { height: 76px; }
 
-    img {
-      width: 38px;
-      height: 38px;
-    }
-    h2 {
-      color: $font_color;
-      padding-left: 8px;
-    }
-  }
-
-  ul {
-    display: flex;
-    gap: 56px;
-    padding-left: 0;
-
-    li {
-      a {
-        font-size: 16px;
-        font-family: $primary_font;
-        text-decoration: none;
-        color: $font_color;
-      }
-    }
-  }
-
-  .btn {
-    padding-right: 96px;
-
-    button {
-      width: 167px;
-      height: 56px;
-      border-radius: 8px;
-      border: none;
+    .logo {
       display: flex;
       align-items: center;
-      justify-content: center;
-      background: linear-gradient(62deg, #017373, #AAD9D1);
+      padding-left: 96px;
+      @include tablet { padding-left: 48px; }
+      @include mobile { padding-left: 20px; }
 
-      p {
-        font-size: 16px;
-        font-family: $primary_font;
+      .logotype {
+        width: 38px;
+        height: 38px;
         padding-right: 8px;
+        @include mobile { width: 28px; height: 28px; }
+      }
+
+      .logo_text {
+        @include mobile { width: 101px; height: 14px; }
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 56px;
+      padding-left: 0;
+      @include tablet { display: none; }
+
+      li {
+        a {
+          font-size: 16px;
+          font-family: $primary_font;
+          text-decoration: none;
+          color: $font_color;
+        }
+      }
+    }
+
+    .btn {
+      padding-right: 96px;
+      @include tablet { display: none; }
+
+      button {
+        width: 167px;
+        height: 56px;
+        border-radius: 8px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(62deg, #017373, #AAD9D1);
+
+        p {
+          font-size: 16px;
+          font-family: $primary_font;
+          padding-right: 8px;
+        }
+      }
+    }
+
+    .menu-btn {
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        padding-right: 48px;
+        @include mobile { padding-right: 20px; }
+      }
+
+      @include desktop { display: none; }
+      @include tablet { display: flex; }
+    }
+
+    .dropdown-conteiner {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+      backdrop-filter: blur(3px);
+      overflow: auto;
+      @include tablet { top: 87px; }
+      @include mobile { top: 77px; }
+
+      ul {
+        top: 48px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 28px;
+        padding-left: 28px;
+
+        li {
+          width: 189px;
+          height: 46px;
+          border-bottom: white solid 1px;
+          &:last-child { border-bottom: none; }
+
+          a {
+            font-size: 20px;
+            color: $font_color;
+            &:hover { color: $second_color }
+          }
+        }
+      }
+
+      .social_nets {
+        width: 215px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding-left: 28px;
+        position: absolute;
+        bottom: 100px;
+
+        .img_conteiner {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 58px;
+          background-color: $second_color;
+        }
       }
     }
   }

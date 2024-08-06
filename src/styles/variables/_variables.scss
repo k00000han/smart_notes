@@ -1,3 +1,9 @@
 $background_color: #080808;
 $font_color: #EFECE6;
 $second_color: #027373;
+
+$breakpoints: (
+  "desktop": 1440px,
+  "tablet": 900px,
+  "mobile": 400px,
+);
