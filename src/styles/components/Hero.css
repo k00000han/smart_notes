@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.hero-conteiner {
+  display: flex;
+  position: relative;
+  top: 104px;
+}
+@media (max-width: 400px) {
+  .hero-conteiner {
+    top: 20px;
+  }
+}
+.hero-conteiner .text-conteiner {
+  position: absolute;
+  top: 128px;
+  left: 152px;
+  color: #EFECE6;
+}
+@media (max-width: 900px) {
+  .hero-conteiner .text-conteiner {
+    left: 48px;
+  }
+}
+@media (max-width: 525px) {
+  .hero-conteiner .text-conteiner {
+    left: 21px;
+  }
+}
+.hero-conteiner .text-conteiner h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 106%;
+  letter-spacing: 1.7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  .hero-conteiner .text-conteiner h2 {
+    font-size: 29px;
+  }
+}
+@media (max-width: 400px) {
+  .hero-conteiner .text-conteiner h2 {
+    letter-spacing: 1px;
+  }
+}
+.hero-conteiner .text-conteiner h2 span {
+  background: linear-gradient(65deg, #017373, #AAD9D1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.hero-conteiner .text-conteiner p {
+  font-size: 16.2px;
+  font-weight: normal;
+  line-height: 150%;
+  color: #BABABA;
+  margin-top: 8px;
+}
+@media (max-width: 1335px) {
+  .hero-conteiner .hero-img-conteiner {
+    display: none;
+  }
+}
+.hero-conteiner .hero-img-conteiner img {
+  position: absolute;
+  top: 54px;
+  right: 188px;
+}
+.hero-conteiner .form-conteiner {
+  position: relative;
+  top: 388px;
+  left: 152px;
+}
+@media (max-width: 900px) {
+  .hero-conteiner .form-conteiner {
+    left: 48px;
+  }
+}
+@media (max-width: 400px) {
+  .hero-conteiner .form-conteiner {
+    top: 328px;
+    left: 21px;
+  }
+}
+@media (max-width: 525px) {
+  .hero-conteiner .form-conteiner {
+    left: 21px;
+  }
+}
+.hero-conteiner .form-conteiner input {
+  width: 407px;
+  height: 65px;
+  border-radius: 8px;
+  border: solid #027373 1px;
+  background-color: #EFECE6;
+  outline: none;
+  padding-left: 23px;
+}
+@media (max-width: 525px) {
+  .hero-conteiner .form-conteiner input {
+    width: 308px;
+    height: 60px;
+  }
+}
+.hero-conteiner .form-conteiner input::placeholder {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  opacity: 1;
+}
+.hero-conteiner .form-conteiner button {
+  position: absolute;
+  top: 6.5px;
+  right: 6.5px;
+  width: 135px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(62deg, #017373, #AAD9D1);
+  cursor: pointer;
+}
+.hero-conteiner .form-conteiner button:hover {
+  background: #027373;
+}
+@media (max-width: 400px) {
+  .hero-conteiner .form-conteiner button {
+    top: 4.5px;
+    right: 4.5px;
+  }
+}
+.hero-conteiner .form-conteiner button p {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  padding-right: 8px;
+}
+
+/*# sourceMappingURL=Hero.css.map */
