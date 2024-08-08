@@ -9,6 +9,7 @@ nav .navbar-conteiner {
   justify-content: space-between;
   align-items: center;
   border-bottom: #027373 solid 1px;
+  background-color: #080808;
 }
 @media (max-width: 900px) {
   nav .navbar-conteiner {
@@ -24,6 +25,7 @@ nav .navbar-conteiner .logo {
   display: flex;
   align-items: center;
   padding-left: 96px;
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   nav .navbar-conteiner .logo {
@@ -56,6 +58,7 @@ nav .navbar-conteiner ul {
   display: flex;
   gap: 56px;
   padding-left: 0;
+  list-style: none;
 }
 @media (max-width: 900px) {
   nav .navbar-conteiner ul {
@@ -67,6 +70,9 @@ nav .navbar-conteiner ul li a {
   font-family: "DM Sans", sans-serif;
   text-decoration: none;
   color: #EFECE6;
+}
+nav .navbar-conteiner ul li a:hover {
+  color: #027373;
 }
 nav .navbar-conteiner .btn {
   padding-right: 96px;
@@ -85,6 +91,10 @@ nav .navbar-conteiner .btn button {
   align-items: center;
   justify-content: center;
   background: linear-gradient(62deg, #017373, #AAD9D1);
+  cursor: pointer;
+}
+nav .navbar-conteiner .btn button:hover {
+  background: #027373;
 }
 nav .navbar-conteiner .btn button p {
   font-size: 16px;
@@ -119,8 +129,8 @@ nav .navbar-conteiner .dropdown-conteiner {
   width: 100%;
   height: 100%;
   z-index: 20;
-  backdrop-filter: blur(3px);
-  overflow: auto;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
 }
 @media (max-width: 900px) {
   nav .navbar-conteiner .dropdown-conteiner {
@@ -135,6 +145,7 @@ nav .navbar-conteiner .dropdown-conteiner {
 nav .navbar-conteiner .dropdown-conteiner ul {
   top: 48px;
   right: 0;
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -170,6 +181,7 @@ nav .navbar-conteiner .dropdown-conteiner .social_nets .img_conteiner {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 58px;

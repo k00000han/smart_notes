@@ -1,7 +1,13 @@
-$background_color: #080808;
-$font_color: #EFECE6;
-$second_color: #027373;
+// Font colors:
+$main_font_color: #EFECE6;
+$secondary_font_color: #BABABA;
 
+// Project colors;
+$background_color: #080808;
+$second_color: #027373;
+$accent_color: #EFECE6;
+
+// Resolution values:
 $breakpoints: (
   "desktop": 1440px,
   "tablet": 900px,

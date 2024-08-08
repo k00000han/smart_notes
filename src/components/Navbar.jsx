@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import logo from '../assets/logo.svg';
 import logo_text from '../assets/logo_text.svg';
 import arrow from '../assets/arrow_dark.svg';
@@ -11,6 +11,7 @@ import you_tube from '../assets/youtube.svg';
 import {navbarItems} from "../constants";
 
 import "../styles/components/Navbar.scss";
+import "../styles/_global.scss";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,19 @@ const Navbar = () => {
     const toggleOpen = () => {
         setIsOpen(!isOpen);
     }
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+
+        // Очистка эффекта при размонтировании компонента
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, [isOpen]);
 
     return (
         <nav>

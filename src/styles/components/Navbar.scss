@@ -13,6 +13,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: $second_color solid 1px;
+    background-color: $background_color;
     @include tablet { height: 86px; }
     @include mobile { height: 76px; }
 
@@ -20,6 +21,7 @@ nav {
       display: flex;
       align-items: center;
       padding-left: 96px;
+      cursor: pointer;
       @include tablet { padding-left: 48px; }
       @include mobile { padding-left: 20px; }
 
@@ -39,6 +41,7 @@ nav {
       display: flex;
       gap: 56px;
       padding-left: 0;
+      list-style: none;
       @include tablet { display: none; }
 
       li {
@@ -46,7 +49,8 @@ nav {
           font-size: 16px;
           font-family: $primary_font;
           text-decoration: none;
-          color: $font_color;
+          color: $main_font_color;
+          &:hover { color: $second_color }
         }
       }
     }
@@ -64,6 +68,8 @@ nav {
         align-items: center;
         justify-content: center;
         background: linear-gradient(62deg, #017373, #AAD9D1);
+        cursor: pointer;
+        &:hover { background: $second_color }
 
         p {
           font-size: 16px;
@@ -93,14 +99,15 @@ nav {
       width: 100%;
       height: 100%;
       z-index: 20;
-      backdrop-filter: blur(3px);
-      overflow: auto;
+      backdrop-filter: blur(20px);
+      overflow: hidden;
       @include tablet { top: 87px; }
       @include mobile { top: 77px; }
 
       ul {
         top: 48px;
         right: 0;
+        list-style: none;
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -115,7 +122,7 @@ nav {
 
           a {
             font-size: 20px;
-            color: $font_color;
+            color: $main_font_color;
             &:hover { color: $second_color }
           }
         }
@@ -135,6 +142,7 @@ nav {
           display: flex;
           align-items: center;
           justify-content: center;
+          cursor: pointer;
           width: 40px;
           height: 40px;
           border-radius: 58px;

@@ -1,0 +1,102 @@
+@import "../base/typography";
+@import "../variables/variables";
+@import "../abstracts/mixins";
+
+.hero-conteiner {
+  display: flex;
+  position: relative;
+  top: 104px;
+  @include mobile { top: 20px; }
+
+  .text-conteiner {
+    position: absolute;
+    top: 128px;
+    left: 152px;
+    color: $main_font_color;
+    @include tablet { left: 48px; }
+    @media (max-width: 525px) { left: 21px; }
+
+    h2 {
+      font-family: $primary_font;
+      font-size: 58px;
+      font-weight: bold;
+      line-height: 106%;
+      letter-spacing: 1.7px;
+      margin-top: 0;
+      margin-bottom: 0;
+      @include tablet { font-size: 29px; }
+      @include mobile { letter-spacing: 1px; }
+
+      span {
+        @include gradient(linear-gradient(65deg, #017373, #AAD9D1));
+      }
+    }
+
+    p {
+      font-size: 16.2px;
+      font-weight: normal;
+      line-height: 150%;
+      color: $secondary_font_color;
+      margin-top: 8px;
+    }
+  }
+
+  .hero-img-conteiner {
+    @media (max-width: 1335px) { display: none; }
+
+    img {
+      position: absolute;
+      top: 54px;
+      right: 188px;
+    }
+  }
+
+  .form-conteiner {
+    position: relative;
+    top: 388px;
+    left: 152px;
+    @include tablet { left: 48px; }
+    @include mobile { top: 328px; left: 21px; }
+    @media (max-width: 525px) { left: 21px; }
+
+    input {
+      width: 407px;
+      height: 65px;
+      border-radius: 8px;
+      border: solid $second_color 1px;
+      background-color: $accent_color;
+      outline: none;
+      padding-left: 23px;
+      @media (max-width: 525px) { width: 308px; height: 60px; }
+
+      &::placeholder {
+        font-family: $primary_font;
+        font-size: 16px;
+        opacity: 1;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 6.5px;
+      right: 6.5px;
+      width: 135px;
+      height: 56px;
+      border-radius: 8px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(62deg, #017373, #AAD9D1);
+      cursor: pointer;
+      &:hover { background: $second_color }
+      @include mobile { top: 4.5px; right: 4.5px;}
+
+      p {
+        font-size: 16px;
+        font-family: $primary_font;
+        padding-right: 8px;
+      }
+    }
+  }
+}
