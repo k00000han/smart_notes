@@ -4,6 +4,11 @@
   position: relative;
   top: 104px;
 }
+@media (max-width: 900px) {
+  .hero-conteiner {
+    top: 50px;
+  }
+}
 @media (max-width: 400px) {
   .hero-conteiner {
     top: 20px;
@@ -76,6 +81,7 @@
 @media (max-width: 900px) {
   .hero-conteiner .form-conteiner {
     left: 48px;
+    top: 300px;
   }
 }
 @media (max-width: 400px) {

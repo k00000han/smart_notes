@@ -6,6 +6,7 @@
   display: flex;
   position: relative;
   top: 104px;
+  @include tablet { top: 50px; }
   @include mobile { top: 20px; }
 
   .text-conteiner {
@@ -55,7 +56,7 @@
     position: relative;
     top: 388px;
     left: 152px;
-    @include tablet { left: 48px; }
+    @include tablet { left: 48px; top: 300px; }
     @include mobile { top: 328px; left: 21px; }
     @media (max-width: 525px) { left: 21px; }
 
