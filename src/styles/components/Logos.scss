@@ -1,0 +1,49 @@
+@import "../base/typography";
+@import "../variables/variables";
+@import "../abstracts/mixins";
+@import "../base/animations";
+
+.logos-conteiner {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  top: 636px;
+  width: 100%;
+  height: 82px;
+  @include tablet { top: 536px; }
+  @include mobile { top: 406px; }
+
+  &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 350px;
+      height: 100%;
+      z-index: 10;
+      @include tablet { width: 200px; }
+      @include mobile { width: 75px; }
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(8, 8, 8, 1), transparent);
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(8, 8, 8, 1), transparent);
+    }
+
+  .logos-slide {
+    width: 90%;
+    display: inline-block;
+    animation: 35s slides infinite linear;
+  }
+
+    img {
+      width: 135px;
+      height: 48px;
+  }
+}

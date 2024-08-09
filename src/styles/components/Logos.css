@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.logos-conteiner {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  top: 636px;
+  width: 100%;
+  height: 82px;
+}
+@media (max-width: 900px) {
+  .logos-conteiner {
+    top: 536px;
+  }
+}
+@media (max-width: 400px) {
+  .logos-conteiner {
+    top: 406px;
+  }
+}
+.logos-conteiner::before, .logos-conteiner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  z-index: 10;
+}
+@media (max-width: 900px) {
+  .logos-conteiner::before, .logos-conteiner::after {
+    width: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .logos-conteiner::before, .logos-conteiner::after {
+    width: 75px;
+  }
+}
+.logos-conteiner::before {
+  left: 0;
+  background: linear-gradient(to right, rgb(8, 8, 8), transparent);
+}
+.logos-conteiner::after {
+  right: 0;
+  background: linear-gradient(to left, rgb(8, 8, 8), transparent);
+}
+.logos-conteiner .logos-slide {
+  width: 90%;
+  display: inline-block;
+  animation: 35s slides infinite linear;
+}
+.logos-conteiner img {
+  width: 135px;
+  height: 48px;
+}
+
+/*# sourceMappingURL=Logos.css.map */
