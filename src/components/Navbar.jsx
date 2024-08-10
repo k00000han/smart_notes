@@ -27,7 +27,6 @@ const Navbar = () => {
             document.body.classList.remove('no-scroll');
         }
 
-        // Очистка эффекта при размонтировании компонента
         return () => {
             document.body.classList.remove('no-scroll');
         };

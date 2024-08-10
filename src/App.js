@@ -5,6 +5,7 @@ import Logos from "./components/Logos";
 import "./styles/_global.scss"
 import "./styles/app.scss";
 import Testimonial from "./components/Testimonial";
+import Feature from "./components/Feature";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Logos />
         <Testimonial customClass="first_use" />
+        <Feature />
     </>
   );
 }
