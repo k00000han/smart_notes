@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.testimonial-conteiner {
+  width: 100%;
+  height: 297px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-conteiner .testimonial-text-conteiner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 471px;
+  height: 169px;
+}
+@media (max-width: 500px) {
+  .testimonial-conteiner .testimonial-text-conteiner {
+    width: 335px;
+    height: 178px;
+  }
+}
+.testimonial-conteiner .testimonial-text-conteiner img {
+  position: absolute;
+  width: 37.37px;
+  height: 24px;
+  left: 0;
+  top: 10px;
+}
+.testimonial-conteiner .testimonial-text-conteiner h5 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 23.5px;
+  line-height: 140%;
+  letter-spacing: -10%;
+  color: #EFECE6;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .testimonial-conteiner .testimonial-text-conteiner h5 {
+    font-size: 19.5px;
+    line-height: 150%;
+    letter-spacing: 0;
+  }
+}
+.testimonial-conteiner .testimonial-text-conteiner p {
+  position: absolute;
+  top: 135px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #EFECE6;
+  gap: 16px;
+}
+@media (max-width: 400px) {
+  .testimonial-conteiner .testimonial-text-conteiner p {
+    font-size: 14px;
+    top: 150px;
+  }
+}
+.testimonial-conteiner .testimonial-text-conteiner p span {
+  color: #737373;
+}
+
+/*# sourceMappingURL=Testimonial.css.map */

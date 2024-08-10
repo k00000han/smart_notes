@@ -2,7 +2,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Logos from "./components/Logos";
 
+import "./styles/_global.scss"
 import "./styles/app.scss";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
         <Navbar />
         <Hero />
         <Logos />
+        <Testimonial customClass="first_use" />
     </>
   );
 }

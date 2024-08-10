@@ -1,3 +1,12 @@
+@import "./abstracts/mixins";
+
 .no-scroll {
   overflow: hidden;
+}
+
+// Testimonial position classes
+.first_use {
+  top: 684px;
+  @include tablet { top: 434px; }
+  @include mobile { top: 364px; }
 }

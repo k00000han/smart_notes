@@ -1,0 +1,55 @@
+@import "../base/typography";
+@import "../variables/variables";
+@import "../abstracts/mixins";
+
+.testimonial-conteiner {
+  width: 100%;
+  height: 297px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .testimonial-text-conteiner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 471px;
+    height: 169px;
+    @media (max-width: 500px) { width: 335px; height: 178px; }
+
+    img {
+      position: absolute;
+      width: 37.37px;
+      height: 24px;
+      left: 0;
+      top: 10px;
+    }
+
+    h5 {
+      font-family: $primary_font;
+      font-weight: bold;
+      font-size: 23.5px;
+      line-height: 140%;
+      letter-spacing: -10%;
+      color: $main_font_color;
+      text-align: center;
+      @media (max-width: 500px) { font-size: 19.5px; line-height: 150%; letter-spacing: 0; }
+    }
+
+    p {
+      position: absolute;
+      top: 135px;
+      font-family: $primary_font;
+      font-size: 16px;
+      color: $main_font_color;
+      gap: 16px;
+      @include mobile { font-size: 14px; top: 150px; }
+
+      span {
+        color: $third_font_color;
+      }
+    }
+  }
+}
