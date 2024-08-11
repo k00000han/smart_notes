@@ -26,7 +26,12 @@
   width: 37.37px;
   height: 24px;
   left: 0;
-  top: 15px;
+  top: 16px;
+}
+@media (max-width: 500px) {
+  .testimonial-conteiner .testimonial-text-conteiner img {
+    top: 10px;
+  }
 }
 .testimonial-conteiner .testimonial-text-conteiner h5 {
   font-family: "DM Sans", sans-serif;

@@ -25,3 +25,9 @@
   background-clip: text;
   color: transparent;
 }
+
+@mixin grid-item($column-start, $column-end, $row-start, $row-end, $height) {
+  grid-column: #{$column-start} / #{$column-end};
+  grid-row: #{$row-start} / #{$row-end};
+  height: $height;
+}

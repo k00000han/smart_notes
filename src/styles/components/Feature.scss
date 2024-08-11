@@ -10,12 +10,17 @@
   width: 100%;
   height: 944px;
   top: 680px;
+  @include tablet { top: 480px; }
+  @include mobile { top: 440px; }
 
   .feature-text-conteiner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    @include tablet { width: 648px; }
+    @media (max-width: 500px) { width: 335px; }
 
     h2 {
       font-family: $primary_font;
@@ -25,6 +30,7 @@
       letter-spacing: 1.5px;
       color: $main_font_color;
       margin: 0;
+      @include mobile { font-size: 30px;}
 
       span {
         @include gradient(linear-gradient(65deg, #017373, #AAD9D1));
@@ -41,13 +47,14 @@
       color: $secondary_font_color;
       padding-top: 5px;
       margin: 0;
+      @include mobile { font-size: 14px; width: 335px; }
     }
   }
 
   .feature-boxes-conteiner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(2, auto);
     gap: 24px;
     position: relative;
     width: 100%;
@@ -55,24 +62,63 @@
     height: 599px;
     top: 100px;
 
-    .item-1 { grid-column: 1 / 3; grid-row: 1 / 2; height: 228px; }
-    .item-2 { grid-column: 3 / 5; grid-row: 1 / 2; height: 228px; }
-    .item-3 { grid-column: 1 / 2; grid-row: 2 / 3; height: 351px; }
-    .item-4 { grid-column: 2 / 3; grid-row: 2 / 3; height: 351px; }
-    .item-5 { grid-column: 3 / 4; grid-row: 2 / 3; height: 351px; }
-    .item-6 { grid-column: 4 / 5; grid-row: 2 / 3; height: 351px; }
+    @media (max-width: 1200px) { max-width: 642px; grid-template-rows: repeat(4, auto); }
+    @media (max-width: 670px) { max-width: 335px; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(6, auto); }
+
+
+    .item-1 {
+      @include grid-item(1, 3, 1, 2, 228px);
+
+      @media (max-width: 1200px) { @include grid-item(1, 3, 1, 2, 270px); }
+      @media (max-width: 670px) { @include grid-item(1, 3, 1, 2, 212px); }
+    }
+
+    .item-2 {
+      @include grid-item(3, 5, 1, 2, 228px);
+
+      @media (max-width: 1200px) { @include grid-item(3, 5, 1, 2, 270px); }
+      @media (max-width: 670px) { @include grid-item(1, 3, 2, 3, 212px); }
+    }
+
+    .item-3 {
+      @include grid-item(1, 2, 2, 3, 351px);
+
+      @media (max-width: 1200px) { @include grid-item(1, 5, 2, 3, 222px); }
+      @media (max-width: 670px) { @include grid-item(1, 3, 3, 4, 212px); }
+    }
+
+    .item-4 {
+      @include grid-item(2, 3, 2, 3, 351px);
+
+      @media (max-width: 1200px) { @include grid-item(1, 3, 3, 4, 249px); }
+      @media (max-width: 670px) { @include grid-item(1, 3, 4, 5, 212px); }
+    }
+
+    .item-5 {
+      @include grid-item(3, 4, 2, 3, 351px);
+
+      @media (max-width: 1200px) { @include grid-item(3, 5, 3, 4, 249px); }
+      @media (max-width: 670px) { @include grid-item(1, 3, 5, 6, 212px); }
+    }
+
+    .item-6 {
+      @include grid-item(4, 5, 2, 3, 351px);
+
+      @media (max-width: 1200px) { @include grid-item(1, 5, 4, 5, 222px); }
+      @media (max-width: 670px) { @include grid-item(1, 3, 6, 7, 212px); }
+    }
+
 
     .feature-box {
       border: solid 0.5px $second_color;
       border-radius: 12px;
       overflow: hidden;
-      white-space: pre-line;
 
       .text-feature-box {
         position: relative;
-        word-wrap: break-word;
-        word-break: break-word;
-        white-space: pre-line;
+        padding: 24px;
+        top: 0;
+        left: 0;
 
         h6 {
           font-family: $primary_font;
@@ -80,9 +126,11 @@
           line-height: 150%;
           color: $main_font_color;
           position: relative;
-          top: 50px;
-          left: 32px;
+          top: 22px;
+          left: 8px;
           margin: 0;
+          overflow-wrap: break-word;
+          @media (max-width: 1200px) { font-size: 18px; top: 12px; left: 0}
         }
 
         p {
@@ -91,8 +139,11 @@
           line-height: 150%;
           text-align: left;
           color: $secondary_font_color;
-          margin-top: 60px;
-          margin-left: 32px;
+          position: relative;
+          top: 16px;
+          left: 8px;
+          @media (max-width: 1200px) { left: 0}
+          @media (max-width: 670px) { font-size: 14px; top: 4px; }
         }
       }
 
@@ -100,6 +151,8 @@
         position: relative;
         top: 32px;
         left: 32px;
+        @media (max-width: 1200px) { top: 32px; left: 24px; }
+        @media (max-width: 670px) { top: 24px; left: 24px;}
       }
     }
   }
