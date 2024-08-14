@@ -1,0 +1,54 @@
+@import "../variables/variables";
+@import "../abstracts/mixins";
+
+
+.video-conteiner {
+  width: 100%;
+  top: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1200px) { top: 1080px; }
+  @media (max-width: 900px) { top: 990px; }
+  @media (max-width: 670px) { top: 1250px; }
+  @media (max-width: 500px) { top: 1350px; }
+  @media (max-width: 400px) { top: 1250px; }
+
+  .video-img {
+    position: relative;
+    width: 77%;
+    height: auto;
+    border-radius: 20px;
+    @media (max-width: 900px) { width: 90%; }
+    @media (max-width: 670px) { width: 90%; border-radius: 10px; }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Покрывает всю ширину видео */
+    height: 100%; /* Покрывает всю высоту видео */
+    border-radius: 20px; /* Совпадает с бордером видео */
+    background-color: rgba(1, 140, 128, 0.6);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  .play-btn {
+    position: absolute;
+    width: 16.8vw;
+    height: auto;
+    top: 53.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 900px) { width: 194px; height: 194px; }
+    @media (max-width: 500px) { width: 194px; height: 124px; top: 40%; }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

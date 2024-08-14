@@ -1,0 +1,89 @@
+@charset "UTF-8";
+.video-conteiner {
+  width: 100%;
+  top: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .video-conteiner {
+    top: 1080px;
+  }
+}
+@media (max-width: 900px) {
+  .video-conteiner {
+    top: 990px;
+  }
+}
+@media (max-width: 670px) {
+  .video-conteiner {
+    top: 1250px;
+  }
+}
+@media (max-width: 500px) {
+  .video-conteiner {
+    top: 1350px;
+  }
+}
+@media (max-width: 400px) {
+  .video-conteiner {
+    top: 1250px;
+  }
+}
+.video-conteiner .video-img {
+  position: relative;
+  width: 77%;
+  height: auto;
+  border-radius: 20px;
+}
+@media (max-width: 900px) {
+  .video-conteiner .video-img {
+    width: 90%;
+  }
+}
+@media (max-width: 670px) {
+  .video-conteiner .video-img {
+    width: 90%;
+    border-radius: 10px;
+  }
+}
+.video-conteiner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Покрывает всю ширину видео */
+  height: 100%; /* Покрывает всю высоту видео */
+  border-radius: 20px; /* Совпадает с бордером видео */
+  background-color: rgba(1, 140, 128, 0.6);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.video-conteiner .play-btn {
+  position: absolute;
+  width: 16.8vw;
+  height: auto;
+  top: 53.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 900px) {
+  .video-conteiner .play-btn {
+    width: 194px;
+    height: 194px;
+  }
+}
+@media (max-width: 500px) {
+  .video-conteiner .play-btn {
+    width: 194px;
+    height: 124px;
+    top: 40%;
+  }
+}
+.video-conteiner .play-btn img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=Video.css.map */

@@ -10,3 +10,12 @@
   @include tablet { top: 434px; }
   @include mobile { top: 364px; }
 }
+
+.second_use {
+  top: 620px;
+  @media (max-width: 1200px) { top: 1010px; }
+  @media (max-width: 900px) { top: 910px; }
+  @media (max-width: 670px) { top: 1210px; }
+  @media (max-width: 500px) { top: 1310px; }
+  @media (max-width: 400px) { top: 1160px; }
+}

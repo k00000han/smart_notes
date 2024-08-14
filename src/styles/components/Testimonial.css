@@ -44,6 +44,7 @@
 }
 @media (max-width: 500px) {
   .testimonial-conteiner .testimonial-text-conteiner h5 {
+    padding: 10px;
     font-size: 19.5px;
     line-height: 150%;
     letter-spacing: 0;
