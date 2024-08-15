@@ -122,6 +122,7 @@
   width: 135px;
   height: 56px;
   border-radius: 8px;
+  border-radius: 8px;
   border: none;
   display: flex;
   align-items: center;
@@ -130,7 +131,7 @@
   cursor: pointer;
 }
 .hero-conteiner .form-conteiner button:hover {
-  background: #027373;
+  background: linear-gradient(62deg, #AAD9D1, #43a4a4);
 }
 @media (max-width: 400px) {
   .hero-conteiner .form-conteiner button {

@@ -1,0 +1,267 @@
+@import "../base/typography";
+@import "../variables/variables";
+@import "../abstracts/mixins";
+
+
+.pricing-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  //height: 944px;
+  top: 850px;
+  overflow-x: hidden;
+  @media (max-width: 1200px) { top: 1150px; }
+  @media (max-width: 900px) { top: 1050px; }
+  @media (max-width: 670px) { top: 1350px; }
+  @media (max-width: 500px) { top: 1450px; }
+
+  .pricing-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-family: $primary_font;
+      font-size: 49px;
+      font-weight: 650;
+      line-height: 120%;
+      letter-spacing: 1.5px;
+      color: $main_font_color;
+      margin: 0;
+      @media (max-width: 500px) { font-size: 30px; }
+
+      span {
+        @include gradient(linear-gradient(65deg, #017373, #AAD9D1));
+      }
+    }
+
+    p {
+      width: 426px;
+      height: 35px;
+      font-family: $primary_font;
+      font-size: 16px;
+      text-align: center;
+      line-height: 150%;
+      color: $secondary_font_color;
+      padding-top: 14px;
+      margin: 0;
+      @media (max-width: 500px) { width: 335px; height: 31px; font-size: 14px; }
+    }
+  }
+
+  .pricing-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 35px;
+
+    .monthly-tag {
+      font-family: $primary_font;
+      font-size: 18px;
+      color: $main_font_color;
+      @media (max-width: 500px) { font-size: 14px; }
+    }
+
+    .yearly-tag {
+      font-family: $primary_font;
+      font-size: 18px;
+      color: $third_font_color;
+      @media (max-width: 500px) { font-size: 14px; }
+    }
+
+    .monthly-tag.active {
+      color: $third_font_color;  // Цвет для активного состояния
+    }
+
+    .yearly-tag.active {
+      color: $main_font_color;   // Цвет для активного состояния
+    }
+
+    .discount-tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 94px;
+      height: 26px;
+      border-radius: 40px;
+      @include gradient-bg(linear-gradient(65deg, #017373, #AAD9D1));
+
+      p {
+        font-family: $primary_font;
+        font-size: 14px;
+        color: $background_color;
+      }
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 66px;
+      height: 35px;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked + .slider {
+          background-color: #009898;
+        }
+
+        &:checked + .slider:before {
+          transform: translateX(34px);
+        }
+      }
+
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #BABABA;
+            transition: 0.4s;
+            border-radius: 16.5px;
+            border: 1px solid #017373;
+
+            &:before {
+              position: absolute;
+              content: "";
+              width: 18px;
+              height: 21px;
+              left: 6px;
+              bottom: 5px;
+              background-color: white;
+              transition: 0.4s;
+              border-radius: 50%;
+            }
+          }
+    }
+  }
+
+
+  .pricing-boxes-conteiner {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 36px;
+    padding-top: 25px;
+    @media (max-width: 1200px) { grid-template-columns: 1fr; }
+
+    .pricing-box {
+      position: relative;
+      width: 357px;
+      height: 432px;
+      border: 2px solid #017373;
+      border-radius: 10px;
+      @media (max-width: 1200px) { width: 472px; height: 432px; }
+      @media (max-width: 670px) { width: 335px; height: 426px; }
+
+      .box-title {
+        display: flex;
+        position: relative;
+        gap: 8px;
+        top: 30px;
+        left: 32px;
+
+        p {
+          font-family: $primary_font;
+          font-size: 14px;
+          color: $second_color;
+        }
+      }
+
+      .box-price {
+        display: flex;
+        position: relative;
+        padding-left: 32px;
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+
+        p {
+          font-family: $primary_font;
+          position: relative;
+          margin-top: 40px;
+          line-height: 120%;
+          letter-spacing: 0;
+        }
+
+        .tag {
+          font-family: $primary_font;
+          font-size: 16px;
+          font-weight: 300;
+          position: relative;
+          padding-left: 8px;
+          top: 30px;
+        }
+      }
+
+      .list {
+        position: absolute;
+        top: 150px;
+
+        .list-item {
+          display: flex;
+          padding-left: 32px;
+          margin-top: 9px;
+          margin-bottom: 2px;
+
+          img {
+            padding-right: 8px;
+          }
+        }
+      }
+
+      .box-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 128px;
+
+        button {
+          width: 293px;
+          height: 59px;
+          border: 1px solid #009898;
+          background-color: #EFECE6;
+          gap: 10px;
+          @include button_2(linear-gradient(65deg, #AAD9D1, #43a4a4));
+
+          p {
+            font-family: $primary_font;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 0;
+          }
+
+          img {
+            width: 27px;
+            height: 27px;
+          }
+        }
+
+        .note {
+          font-family: $primary_font;
+          font-size: 12px;
+          line-height: 150%;
+          margin-top: 2px;
+          color: #BABABA;
+        }
+      }
+    }
+
+    .item-1 { background-color: white; .box-price { p { color: black; }}}
+
+    .item-2 { background-color: $background_color; .list-item { color: #BABABA; } .tag { color: $second_color; }
+      button { border: 1px solid #017373; background: linear-gradient(62deg, #017373, #AAD9D1); } }
+
+    .item-3 { background-color: white; height: 416px; .box-price { p { color: black; }}}
+  }
+}

@@ -84,13 +84,7 @@
       width: 135px;
       height: 56px;
       border-radius: 8px;
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(62deg, #017373, #AAD9D1);
-      cursor: pointer;
-      &:hover { background: $second_color }
+      @include button_1;
       @include mobile { top: 4.5px; right: 4.5px;}
 
       p {

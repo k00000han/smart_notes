@@ -1,5 +1,6 @@
 @import "../variables/variables";
 
+// Screen sizes
 @mixin desktop {
   @media (max-width: map-get($breakpoints, "desktop")) {
     @content
@@ -18,6 +19,7 @@
   }
 }
 
+// Gradients
 @mixin gradient($gradient) {
   background: $gradient;
   -webkit-background-clip: text;
@@ -25,9 +27,38 @@
   background-clip: text;
   color: transparent;
 }
+@mixin gradient-bg($gradient) {
+  background: $gradient;
+  background-size: cover;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+}
 
+// Grid templates
 @mixin grid-item($column-start, $column-end, $row-start, $row-end, $height) {
   grid-column: #{$column-start} / #{$column-end};
   grid-row: #{$row-start} / #{$row-end};
   height: $height;
 }
+
+// Buttons
+@mixin button_1 {
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(62deg, #017373, #AAD9D1);
+  cursor: pointer;
+  &:hover { background: linear-gradient(62deg, #AAD9D1, #43a4a4); }
+}
+@mixin button_2($hvr-color) {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover { background: $hvr-color }
+}
+
+

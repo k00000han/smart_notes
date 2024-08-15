@@ -19,3 +19,14 @@
   @media (max-width: 500px) { top: 1310px; }
   @media (max-width: 400px) { top: 1160px; }
 }
+
+.third_use {
+  top: 750px;
+  @media (max-width: 1200px) { top: 1110px; }
+  @media (max-width: 900px) { top: 1010px; }
+  @media (max-width: 670px) { top: 1310px; }
+  @media (max-width: 500px) { top: 1410px; }
+  @media (max-width: 400px) { top: 1300px; }
+}
+
+// Buttons

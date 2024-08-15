@@ -5,6 +5,10 @@ import feature_4 from "../assets/feature_4.svg"
 import feature_5 from "../assets/feature_5.svg"
 import feature_6 from "../assets/feature_6.svg"
 
+import icon_1 from "../assets/individual_icon.svg"
+import icon_2 from "../assets/team_icon.svg"
+import icon_3 from "../assets/enterprise_icon.svg"
+
 export const navbarItems = [
     {label: "Features", href: "#"},
     {label: "Pricing", href: "#"},
@@ -78,5 +82,49 @@ export const featuresItems = [
             "data across platforms and \n" +
             "enhancing collaboration.",
         img: feature_6
+    }
+]
+
+export const pricingItems = [
+    {
+        icon: icon_1 ,
+        plan: "Individual Plan",
+        price: "$9.99",
+        features: [
+            "Real-time collaboration",
+            "AI-powered organization",
+            "Customizable templates",
+            "5GB cloud storage",
+            "Basic integrations"
+        ],
+        btnContent: "Start Free Trial",
+        note: "No credit card required"
+    },
+    {
+        icon: icon_2 ,
+        plan: "Team Plan",
+        price: "$19.99",
+        features: [
+            "Everything in the Individual Plan",
+            "Unlimited cloud storage",
+            "Advanced integrations",
+            "Team management and permissions",
+            "Shared templates and note libraries"
+        ],
+        btnContent: "Start Free Trial",
+        note: "No credit card required"
+    },
+    {
+        icon: icon_3 ,
+        plan: "Enterprise Plan",
+        price: "Custom",
+        features: [
+            "Everything in the Team Plan",
+            "Dedicated account manager",
+            "Enterprise-grade security",
+            "Customized onboarding",
+            "Advanced analytics"
+        ],
+        btnContent: "Contact support"
     }
 ]
