@@ -29,4 +29,11 @@
   @media (max-width: 400px) { top: 1300px; }
 }
 
-// Buttons
+.fourth_use {
+  top: 920px;
+  @media (max-width: 1200px) { top: 1210px; }
+  @media (max-width: 900px) { top: 1110px; }
+  @media (max-width: 670px) { top: 1410px; }
+  @media (max-width: 500px) { top: 1510px; }
+  @media (max-width: 400px) { top: 1500px; }
+}

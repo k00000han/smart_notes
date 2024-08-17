@@ -6,7 +6,6 @@
   position: relative;
   width: 100%;
   top: 850px;
-  overflow-x: hidden;
 }
 @media (max-width: 1200px) {
   .pricing-conteiner {
@@ -26,6 +25,11 @@
 @media (max-width: 500px) {
   .pricing-conteiner {
     top: 1450px;
+  }
+}
+@media (max-width: 400px) {
+  .pricing-conteiner {
+    top: 1350px;
   }
 }
 .pricing-conteiner .pricing-header {
@@ -197,6 +201,7 @@
 .pricing-conteiner .pricing-boxes-conteiner .pricing-box .box-title {
   display: flex;
   position: relative;
+  width: 150px;
   gap: 8px;
   top: 30px;
   left: 32px;

@@ -8,6 +8,7 @@ import Pricing from "./components/Pricing";
 
 import "./styles/_global.scss"
 import "./styles/app.scss";
+import FAQSection from "./components/FAQSection";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Video />
         <Testimonial customClass="third_use" />
         <Pricing />
+        <Testimonial customClass="fourth_use" />
+        <FAQSection />
     </>
   );
 }

@@ -128,3 +128,46 @@ export const pricingItems = [
         btnContent: "Contact support"
     }
 ]
+
+export const FAQItems = [
+    {
+        title: "What is SmartNotes?",
+        description:
+            "SmartNotes is an innovative, cloud-based note-taking application that helps you organize, " +
+            "collaborate, and manage your tasks efficiently."
+    },
+    {
+        title: "How do I get started with SmartNotes?",
+        description: "Getting started with SmartNotes is easy! Simply visit our website, " +
+            "sign up for a free trial, and start exploring the features. " +
+            "Our intuitive interface and comprehensive onboarding materials will guide you through the process."
+    },
+    {
+        title: "What are the key features of SmartNotes?",
+        description:
+            "SmartNotes offers a range of powerful features, including cross-platform accessibility, " +
+            "customizable templates, secure cloud storage, real-time collaboration, AI-powered organization, " +
+            "and integrations with popular tools like Google Drive and Trello."
+    },
+    {
+        title: "How much does SmartNotes cost?",
+        description:
+            "SmartNotes offers flexible pricing plans tailored to your needs. " +
+            "You can start with a free trial to explore the features, " +
+            "and then upgrade to one of our premium plans based on your usage and team size. Visit our pricing page for more details."
+    },
+    {
+        title: "Who is SmartNotes for?",
+        description:
+            "SmartNotes is perfect for individuals, students, professionals, " +
+            "and teams who want to stay organized, collaborate effectively, and boost productivity. " +
+            "Whether you're managing personal tasks or working on complex projects, SmartNotes adapts to your workflow."
+    },
+    {
+        title: "Why SmartNotes?",
+        description:
+            "SmartNotes stands out because of its powerful combination of AI-driven organization, " +
+            "real-time collaboration, and seamless integrations. It helps you save time, stay organized, " +
+            "and work efficiently across multiple devices, stored your data in the cloud."
+    }
+]
