@@ -7,7 +7,7 @@ import menu_close from '../assets/menu_close.svg';
 import facebook from '../assets/facebook.svg';
 import linked_in from '../assets/linkedin.svg';
 import twitter from '../assets/twitter.svg';
-import you_tube from '../assets/youtube.svg';
+import youtube from '../assets/youtube.svg';
 import {navbarItems} from "../constants";
 
 import "../styles/components/Navbar.scss";
@@ -82,7 +82,7 @@ const Navbar = () => {
                                 <img src={ twitter } alt="tw"/>
                             </div>
                             <div className="img_conteiner">
-                                <img src={ you_tube } alt="yt"/>
+                                <img src={ youtube } alt="yt"/>
                             </div>
                         </div>
                     </div>

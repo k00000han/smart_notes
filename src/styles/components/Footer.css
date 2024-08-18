@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.footer-conteiner {
+  display: flex;
+  position: relative;
+  top: 1675px;
+  width: 100%;
+  height: 404px;
+  border-top: #048C80 1px solid;
+}
+@media (max-width: 1350px) {
+  .footer-conteiner {
+    height: 557px;
+  }
+}
+@media (max-width: 1200px) {
+  .footer-conteiner {
+    top: 1975px;
+  }
+}
+@media (max-width: 690px) {
+  .footer-conteiner {
+    height: 727px;
+  }
+}
+@media (max-width: 670px) {
+  .footer-conteiner {
+    top: 2175px;
+  }
+}
+.footer-conteiner .footer-logo {
+  position: absolute;
+  top: 80px;
+  left: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 1350px) {
+  .footer-conteiner .footer-logo {
+    left: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-conteiner .footer-logo {
+    left: 20px;
+    top: 64px;
+  }
+}
+.footer-conteiner .email-button {
+  position: absolute;
+  top: 192px;
+  left: 144px;
+}
+@media (max-width: 1350px) {
+  .footer-conteiner .email-button {
+    left: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-conteiner .email-button {
+    left: 20px;
+    top: 137px;
+  }
+}
+.footer-conteiner .email-button button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 48px;
+  border: #048C80 1px solid;
+  border-radius: 8px;
+  background-color: #EFECE6;
+}
+.footer-conteiner .email-button button p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  left: 16px;
+}
+.footer-conteiner .email-button button img {
+  position: absolute;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+}
+.footer-conteiner .footer-links {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  right: 143px;
+  top: 62px;
+  gap: 123px;
+}
+@media (max-width: 1350px) {
+  .footer-conteiner .footer-links {
+    left: 48px;
+    right: 0;
+  }
+}
+@media (max-width: 1350px) {
+  .footer-conteiner .footer-links {
+    top: 258px;
+  }
+}
+@media (max-width: 950px) {
+  .footer-conteiner .footer-links {
+    gap: 84px;
+  }
+}
+@media (max-width: 750px) {
+  .footer-conteiner .footer-links {
+    gap: 47px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-conteiner .footer-links {
+    left: 20px;
+    top: 200px;
+    row-gap: 10px;
+  }
+}
+.footer-conteiner .footer-links h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #EFECE6;
+  line-height: 150%;
+  margin-bottom: 7px;
+}
+@media (max-width: 600px) {
+  .footer-conteiner .footer-links h3 {
+    font-size: 16px;
+  }
+}
+.footer-conteiner .footer-links li {
+  margin-top: 3px;
+  list-style: none;
+}
+.footer-conteiner .footer-links li a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #BABABA;
+  line-height: 150%;
+  text-decoration: none;
+}
+.footer-conteiner .footer-links li a:hover {
+  color: #027373;
+}
+@media (max-width: 600px) {
+  .footer-conteiner .footer-links li a {
+    font-size: 14px;
+  }
+}
+.footer-conteiner .footer-bottom {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 76px;
+  background-color: #048C80;
+}
+@media (max-width: 680px) {
+  .footer-conteiner .footer-bottom {
+    height: 136px;
+  }
+}
+.footer-conteiner .footer-bottom p {
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  position: absolute;
+  left: 144px;
+}
+@media (max-width: 1350px) {
+  .footer-conteiner .footer-bottom p {
+    left: 48px;
+  }
+}
+@media (max-width: 680px) {
+  .footer-conteiner .footer-bottom p {
+    left: 30px;
+    top: 81px;
+  }
+}
+.footer-conteiner .footer-bottom .social_nets-conteiner {
+  display: flex;
+  position: absolute;
+  right: 155px;
+  gap: 2px;
+}
+@media (max-width: 1350px) {
+  .footer-conteiner .footer-bottom .social_nets-conteiner {
+    right: 48px;
+  }
+}
+@media (max-width: 680px) {
+  .footer-conteiner .footer-bottom .social_nets-conteiner {
+    left: 20px;
+    top: 8px;
+  }
+}
+.footer-conteiner .footer-bottom .social_nets-conteiner button {
+  background: none;
+  border: none;
+}
+
+/*# sourceMappingURL=Footer.css.map */

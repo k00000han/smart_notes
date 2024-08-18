@@ -171,3 +171,35 @@ export const FAQItems = [
             "and work efficiently across multiple devices, stored your data in the cloud."
     }
 ]
+
+export const productLinks = [
+  { href: "#", text: "About" },
+  { href: "#", text: "Features" },
+  { href: "#", text: "Pricing" },
+  { href: "#", text: "Integrations" },
+  { href: "#", text: "FAQs" },
+];
+
+export const companyLinks = [
+  { href: "#", text: "Our Story" },
+  { href: "#", text: "Team" },
+  { href: "#", text: "Careers" },
+  { href: "#", text: "Press" },
+  { href: "#", text: "Contact Us" },
+];
+
+export const resourcesLinks = [
+  { href: "#", text: "Blog" },
+  { href: "#", text: "Webinars" },
+  { href: "#", text: "Case Studies" },
+  { href: "#", text: "Templates" },
+  { href: "#", text: "Help Center" },
+];
+
+export const legalLinks = [
+  { href: "#", text: "Terms of Service" },
+  { href: "#", text: "Privacy Policy" },
+  { href: "#", text: "Cookie Policy" },
+  { href: "#", text: "Acceptable Use" },
+  { href: "#", text: "Refund Policy" },
+];

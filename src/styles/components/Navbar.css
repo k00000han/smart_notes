@@ -101,6 +101,9 @@ nav .navbar-conteiner .btn button p {
   font-family: "DM Sans", sans-serif;
   padding-right: 8px;
 }
+nav .navbar-conteiner .menu-btn {
+  display: none;
+}
 nav .navbar-conteiner .menu-btn button {
   display: flex;
   align-items: center;
