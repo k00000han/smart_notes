@@ -9,16 +9,16 @@
   align-items: center;
   position: relative;
   width: 100%;
-  top: 1050px;
+  top: 1020px;
   @media (max-width: 1200px) { top: 1300px; }
   @media (max-width: 900px) { top: 1200px; }
   @media (max-width: 670px) { top: 1500px; }
-  @media (max-width: 500px) { top: 1600px; }
 
   .faq-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     h2 {
       font-family: $primary_font;
@@ -30,8 +30,7 @@
       margin: 0;
       text-align: center;
       @media (max-width: 800px) { width: 536px; height: 92px; }
-      @media (max-width: 500px) { font-size: 30px; }
-      @media (max-width: 500px) { width: 335px; height: 78px; }
+      @media (max-width: 600px) { width: 335px; height: 78px; font-size: 30px; }
 
       span {
         @include gradient(linear-gradient(65deg, #017373, #AAD9D1));
@@ -49,7 +48,7 @@
       padding-top: 5px;
       margin: 0;
       @media (max-width: 800px) { width: 536px; height: 59px; padding-top: 30px;}
-      @media (max-width: 500px) { width: 335px; height: 94px; font-size: 14px; }
+      @media (max-width: 600px) { width: 335px; height: 94px; font-size: 14px; }
     }
   }
 
@@ -57,7 +56,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 180px;
     gap: 20px;
     @media (max-width: 800px) { padding-top: 250px; }
 
@@ -73,7 +72,7 @@
       cursor: pointer;
       transition: background-color 0.2s, height 1s ease;
       @media (max-width: 1200px) { width: 536px; }
-      @media (max-width: 670px) { width: 335px; }
+      @media (max-width: 600px) { width: 335px; }
 
       h6 {
         position: absolute;

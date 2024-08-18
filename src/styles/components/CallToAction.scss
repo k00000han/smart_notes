@@ -1,0 +1,91 @@
+@import "../base/typography";
+@import "../variables/variables";
+@import "../abstracts/mixins";
+
+
+.cta-conteiner {
+  display: flex;
+  position: relative;
+  top: 1750px;
+  width: 100%;
+  height: 535px;
+  @media (max-width: 1200px) { top: 2050px; }
+  @media (max-width: 900px) { top: 1950px; }
+  @media (max-width: 670px) { top: 2200px; }
+
+  .cta-header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 5px;
+    left: 260px;
+    @media (max-width: 1400px) { left: 48px; }
+    @media (max-width: 520px) { left: 20px; }
+
+    h2 {
+      width: 498px;
+      height: 150px;
+      font-family: $primary_font;
+      font-size: 49px;
+      font-weight: 650;
+      line-height: 120%;
+      letter-spacing: 1.5px;
+      color: $main_font_color;
+      margin: 0;
+      @media (max-width: 560px) { font-size: 30px; letter-spacing: -1%; width: 335px; height: 78px; }
+
+      span {
+        @include gradient(linear-gradient(65deg, #017373, #AAD9D1));
+      }
+    }
+
+    p {
+      position: absolute;
+      width: 497px;
+      height: 83px;
+      top: 150px;
+      left: 0;
+      padding-top: 15px;
+      font-family: $primary_font;
+      font-size: 16px;
+      line-height: 150%;
+      color: $secondary_font_color;
+      @media (max-width: 560px) { font-size: 14px; width: 335px; height: 94px; top: 90px; }
+    }
+
+    button {
+      position: absolute;
+      left: 0;
+      bottom: 170px;
+      width: 265px;
+      height: 64px;
+      border-radius: 8px;
+      border: none;
+      font-family: $primary_font;
+      color: $background_color;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0;
+      gap: 20px;
+      background: linear-gradient(62deg, #017373, #AAD9D1);
+      @include button_2(linear-gradient(65deg, #AAD9D1, #43a4a4));
+      @media (max-width: 560px) { bottom: 230px; }
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .illustration {
+    position: absolute;
+    right: 260px;
+    width: 375px;
+    height: 381px;
+    @media (max-width: 1400px) { right: 48px; }
+    @media (max-width: 1000px) { display: none; }
+  }
+}

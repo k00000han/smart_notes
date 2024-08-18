@@ -9,6 +9,7 @@ import Pricing from "./components/Pricing";
 import "./styles/_global.scss"
 import "./styles/app.scss";
 import FAQSection from "./components/FAQSection";
+import CallToAction from "./components/callToAction";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Pricing />
         <Testimonial customClass="fourth_use" />
         <FAQSection />
+        <Testimonial customClass="fifth_use" />
+        <CallToAction />
     </>
   );
 }
