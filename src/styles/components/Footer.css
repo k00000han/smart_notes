@@ -186,6 +186,12 @@
     top: 81px;
   }
 }
+@media (max-width: 400px) {
+  .footer-conteiner .footer-bottom p {
+    left: 20px;
+    top: 70px;
+  }
+}
 .footer-conteiner .footer-bottom .social_nets-conteiner {
   display: flex;
   position: absolute;
@@ -201,6 +207,12 @@
   .footer-conteiner .footer-bottom .social_nets-conteiner {
     left: 20px;
     top: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .footer-conteiner .footer-bottom .social_nets-conteiner {
+    left: 14px;
+    top: 15px;
   }
 }
 .footer-conteiner .footer-bottom .social_nets-conteiner button {
