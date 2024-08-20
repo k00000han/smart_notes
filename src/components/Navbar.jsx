@@ -85,16 +85,24 @@ const Navbar = () => {
                         </ul>
                         <div className="social_nets">
                             <div className="img_conteiner">
-                                <img src={facebook} alt="fb"/>
+                                <a href="https://www.facebook.com/">
+                                    <img src={facebook} alt="fb"/>
+                                </a>
                             </div>
                             <div className="img_conteiner">
-                                <img src={linked_in} alt="in"/>
+                                <a href="https://www.linkedin.com">
+                                    <img src={linked_in} alt="in"/>
+                                </a>
                             </div>
                             <div className="img_conteiner">
-                                <img src={twitter} alt="tw"/>
+                                <a href="https://x.com">
+                                    <img src={twitter} alt="tw"/>
+                                </a>
                             </div>
                             <div className="img_conteiner">
-                                <img src={youtube} alt="yt"/>
+                                <a href="https://www.youtube.com">
+                                    <img src={youtube} alt="yt"/>
+                                </a>
                             </div>
                         </div>
                     </motion.div>

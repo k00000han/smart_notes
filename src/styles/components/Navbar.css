@@ -190,5 +190,10 @@ nav .navbar-conteiner .dropdown-conteiner .social_nets .img_conteiner {
   border-radius: 58px;
   background-color: #027373;
 }
+nav .navbar-conteiner .dropdown-conteiner .social_nets .img_conteiner a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=Navbar.css.map */
