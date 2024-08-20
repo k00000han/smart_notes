@@ -10,6 +10,7 @@
   position: relative;
   width: 100%;
   top: 1020px;
+  z-index: 2;
   @media (max-width: 1200px) { top: 1300px; }
   @media (max-width: 900px) { top: 1200px; }
   @media (max-width: 670px) { top: 1500px; }
@@ -71,6 +72,7 @@
       overflow: hidden;
       cursor: pointer;
       transition: background-color 0.2s, height 1s ease;
+      background-color: $background_color;
       @media (max-width: 1200px) { width: 536px; }
       @media (max-width: 600px) { width: 335px; }
 

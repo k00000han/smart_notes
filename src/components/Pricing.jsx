@@ -15,7 +15,7 @@ const Pricing = () => {
 
     return (
         <div className="pricing-conteiner">
-            <div className="pricing-header">
+            <div className="pricing-header" id="pricing">
                 <h2>
                     <span>Pricing </span>& Plans
                 </h2>

@@ -4,7 +4,7 @@ import "../styles/components/Feature.scss";
 
 const Feature = () => {
     return(
-        <div className="feature-conteiner">
+        <div className="feature-conteiner" id="features">
             <div className="feature-text-conteiner">
                 <h2>
                     Discover the Power of <span>SmartNotes</span>

@@ -1,6 +1,10 @@
 @import "base/typography";
 @import "variables/variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background_color;
 }

@@ -13,7 +13,7 @@ import "../styles/components/Footer.scss";
 
 const Footer = () => {
     return (
-        <footer className="footer-conteiner">
+        <footer className="footer-conteiner" id="support">
             <div className="footer-logo">
                 <img className="logotype" src={ logo } alt="logo"/>
                 <img className="logo_text" src={ logo_text } alt="logo"/>

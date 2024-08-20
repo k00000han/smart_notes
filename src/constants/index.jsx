@@ -10,10 +10,10 @@ import icon_2 from "../assets/team_icon.svg"
 import icon_3 from "../assets/enterprise_icon.svg"
 
 export const navbarItems = [
-    {label: "Features", href: "#"},
-    {label: "Pricing", href: "#"},
-    {label: "FAQs", href: "#"},
-    {label: "Support", href: "#"},
+    {label: "Features", href: "#features"},
+    {label: "Pricing", href: "#pricing"},
+    {label: "FAQs", href: "#FAQ"},
+    {label: "Support", href: "#support"},
 ]
 
 export const featuresItems = [

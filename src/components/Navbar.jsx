@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/logo.svg';
 import logo_text from '../assets/logo_text.svg';
 import arrow from '../assets/arrow_dark.svg';
@@ -19,6 +20,10 @@ const Navbar = () => {
     const toggleOpen = () => {
         setIsOpen(!isOpen);
     }
+
+    const handleMenuClick = () => {
+        setIsOpen(false);
+    };
 
     useEffect(() => {
         if (isOpen) {
@@ -62,31 +67,39 @@ const Navbar = () => {
                         )}
                     </button>
                 </div>
+                <AnimatePresence>
                 { isOpen && (
-                    <div className="dropdown-conteiner">
+                    <motion.div
+                        className="dropdown-conteiner"
+                        initial={{ x: 0, y: -10, opacity: 0, filter: 'blur(10px)' }}
+                        animate={{ x: 0, y: 0, opacity: 1, filter: 'blur(0px)' }}
+                        exit={{ x: 0, y: -10, opacity: 0, filter: 'blur(10px)' }}
+                        transition={{ duration: 0.5 }}
+                    >
                         <ul className="dropdown-menu">
                             {navbarItems.map((item, index) => (
                                 <li key={index}>
-                                    <a href={item.href}>{item.label}</a>
+                                    <a href={item.href} onClick={handleMenuClick}>{item.label}</a>
                                 </li>
                             ))}
                         </ul>
                         <div className="social_nets">
                             <div className="img_conteiner">
-                                <img src={ facebook } alt="fb"/>
+                                <img src={facebook} alt="fb"/>
                             </div>
                             <div className="img_conteiner">
-                                <img src={ linked_in } alt="in"/>
+                                <img src={linked_in} alt="in"/>
                             </div>
                             <div className="img_conteiner">
-                                <img src={ twitter } alt="tw"/>
+                                <img src={twitter} alt="tw"/>
                             </div>
                             <div className="img_conteiner">
-                                <img src={ youtube } alt="yt"/>
+                                <img src={youtube} alt="yt"/>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 )}
+                </AnimatePresence>
             </div>
         </nav>
     )
